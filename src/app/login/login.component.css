@@ -1,0 +1,20 @@
+.text-center{
+    color:whitesmoke;
+}
+.container
+{
+    
+    display: flow-root;
+    padding: 2em;
+    width: 40%;
+    font-size: 2rem;
+
+}
+.form-control
+{
+
+    font-size: inherit;
+}
+.btn {
+    font-size: inherit;
+}

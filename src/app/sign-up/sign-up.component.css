@@ -1,0 +1,26 @@
+.leftcontent{
+    float: left;
+    width: 10cm;
+}
+.rightcontent{
+    float: right;
+    top: 0;
+}
+.card
+{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2ex;
+}
+
+.btn {
+    font-size: inherit;
+}
+.form-group label{
+    margin-bottom: 0em;
+}

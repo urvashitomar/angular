@@ -1,0 +1,92 @@
+
+<div [hidden]="submitted" style="padding-left: 15em; padding-right: 15em;">
+    <div class="card">
+        <div class="card-body">
+            <h3>Sign Up </h3>
+  <form >       <!--                              ngSubmit)="onSubmit()">-->
+      <div class="leftcontent">
+    <div class="form-group">
+        <label for="name">Email: </label>
+        <input type="text" class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="name">Password: </label>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+      </div>
+    <div class="form-group">
+      <label for="name">First Name: </label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="user.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Last Name: </label>
+        <input type="text" class="form-control" id="lastName" required [(ngModel)]="user.lastName" name="lastName">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Gender</label><br>
+        <label for="rd1">Male</label><input type="radio" class="form-control" id="rd1" required [(ngModel)]="user.gender" name="gender" value="Male">
+        
+        <label for="rd2">Female</label><input type="radio" class="form-control" id="rd2" required [(ngModel)]="user.gender" name="gender" value="Female">
+        
+      </div>
+    </div>
+
+    <div class="rightcontent">
+    <div class="form-group">
+        <label for="name">Aadhar Number: </label>
+        <input type="text" class="form-control" id="aadhar" required [(ngModel)]="user.aadhaar" name="aadhaar">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Phone number: </label>
+        <input type="number" class="form-control" id="mobNumber" required [(ngModel)]="user.mobNumber" name="mobNumber">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Street: </label>
+        <input type="text" class="form-control" id="addressLine1" required [(ngModel)]="user.addressLine1" name="addressLine1">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Area: </label>
+        <input type="text" class="form-control" id="addressLine2" required [(ngModel)]="user.addressLine2" name="addressLine2">
+      </div>
+
+      <div class="form-group">
+        <label for="name">City: </label>
+        <input type="text" class="form-control" id="city" required [(ngModel)]="user.city" name="city">
+      </div>
+
+      <div class="form-group">
+        <label for="name">State</label>
+        <select name="state" [(ngModel)]="user.state">
+            <option>Select your State</option>
+            <option>Delhi</option>
+            <option>Haryana</option>
+            <option>UttarPradesh</option>
+            <option>MadhyaPradesh</option>
+            </select>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Country: </label>
+        <input type="text" class="form-control" id="country" required [(ngModel)]="user.country" name="country">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Pincode:</label>
+        <input type="number" class="form-control" id="pincode" required [(ngModel)]="user.pincode" name="pincode">
+      </div>
+    </div>
+      <!-- <button type="submit" class="btn btn-success" >Submit</button> -->
+      <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+  </form>
+</div>
+</div>
+</div>
+
+<div [hidden]="submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
