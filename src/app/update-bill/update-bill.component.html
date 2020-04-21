@@ -1,0 +1,50 @@
+<div class="bill-container">
+    <div class="sidebar">
+      
+      <app-main-nav></app-main-nav>
+    </div>
+  
+    <div class="bill-form-container">
+        
+        <div [hidden]="submitted" style="padding-left: 15em; padding-right: 15em; padding-top: 3em;">
+          <div class="card">
+              <div class="card-body">
+                  <h1>Bill Details</h1>
+        <form > 
+          <div class="form-group">
+              <label for="name">Connection Id: </label>
+              <input type="number" class="form-control" id="connectionId" required [(ngModel)]="bill.connectionId" name="connectionId">
+            </div>
+          <div class="form-group">
+              <label for="name">Consumed Units: </label>
+              <input type="text" class="form-control" id="consumedUnits" required [(ngModel)]="bill.consumedUnits" name="consumedUnits">
+            </div>
+            <div class="form-group">
+              <label for="name">Bill Amount: </label>
+              <input type="number" class="form-control" id="billAmount" required [(ngModel)]="bill.billAmount" name="billAmount">
+            </div>
+          <div class="form-group">
+            <label for="name">Generation Date: </label>
+            <input type="date" class="form-control" id="generationDate" required [(ngModel)]="bill.generationDate" name="generationDate">
+          </div>
+          <div class="form-group">
+            <label for="name">Due Date: </label>
+            <input type="date" class="form-control" id="dueDate" required [(ngModel)]="bill.dueDate" name="dueDate">
+          </div>
+          <div class="form-group">
+            <label for="name">Status: </label>
+            <input type="text" class="form-control" id="status" required [(ngModel)]="bill.status" name="status">
+          </div>
+            <!-- <button type="submit" class="btn btn-success" >Submit</button> -->
+            <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+        </form>
+      </div>
+      </div>
+      </div>
+      
+      <div [hidden]="submitted">
+        <!-- <h4>You submitted successfully!</h4> -->
+        <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+      </div>
+    </div>
+  </div>

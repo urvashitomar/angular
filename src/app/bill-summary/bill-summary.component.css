@@ -1,0 +1,35 @@
+.summary-container{
+    padding-left: 2em;
+  height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 0.1em;
+}
+.table{
+    color: burlywood;
+    font-weight: bolder;
+    background-color: rgb(49, 40, 97);
+}
+th{
+    color: darkgray;
+    font-weight: bolder;
+}
+h2{
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+.panel{
+    float: right;
+    top:0em;
+    
+  width: 50%;
+  color: aliceblue;
+}
+
+.sidebar{
+float: left;
+  width: 20%;
+  height: 100%;
+   
+}

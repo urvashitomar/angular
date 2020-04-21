@@ -4,7 +4,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 150px;
   padding-top: 6em;
   /* background: whitesmoke; */
 }
@@ -28,8 +28,7 @@ a:link{
 }
 a{
   font-size: 20px;
-  font-weight: bolder;
-  
+  font-weight: bolder;  
 }
 a:hover{
   background-color: transparent;

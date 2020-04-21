@@ -1,39 +1,39 @@
 <!-- <p>user-list works!</p> -->
+<div class="summary-container">
+<div class="sidebar">
+<app-user></app-user>
+</div>
 <div class="panel panel-primary">
     <div class="panel-heading">
-      <h2>User List</h2>
+      <h2>Bill List</h2>
     </div>
     <div class="panel-body">
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>User Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Gender</th>
-            <th>Aadhar Number</th>
-            <th>Phone Number</th>
+            <th>Bill Id</th>
+            <th>Bill Amount</th>
+            <th>Consumed Units</th>
+            <th>Due Date</th>
+            <th>Generation Date</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of users | async">
-            <td>{{user.uId}}</td>
-            <td>{{ user.firstName}}</td>
-            <td>{{ user.lastName }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.password }}</td>
-            <td>{{ user.gender }}</td>
-            <td>{{ user.aadhaar }}</td>
-            <td>{{ user.mobNumber }}</td>
-            <td>
+          <tr *ngFor="let bill of bills | async">
+            <td>{{bill.billId}}</td>
+            <td>{{ bill.billAmount}}</td>
+            <td>{{ bill.consumedUnits }}</td>
+            <td>{{ bill.dueDate }}</td>
+            <td>{{ bill.generationDate }}</td>
+            <td>{{ bill.status }}</td>
+            <!-- <td>
               
             
             <button (click)="userDetails(user.uId)" class="btn btn-info" style="margin-left: 10px">Details</button>
             <button (click)="editUser(user.uId)" class="btn btn-secondary" style="margin-left: 10px">Update</button>
             <button (click)="deleteUser(user.uId)" class="btn btn-danger">Delete</button> 
-            </td>
+            </td> -->
             
             
 
@@ -43,3 +43,4 @@
     </div>
   </div>
 
+</div>

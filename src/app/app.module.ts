@@ -27,6 +27,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UpdateDetailsComponent } from './update-details/update-details.component';
+import { UpdateBillComponent } from './update-bill/update-bill.component';
+import { UpdateConnectionComponent } from './update-connection/update-connection.component';
+import { UserComponent } from './user/user.component';
+import { BillSummaryComponent } from './bill-summary/bill-summary.component';
+import { PayBillComponent } from './pay-bill/pay-bill.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +47,15 @@ import { UserListComponent } from './user-list/user-list.component';
     SignUpComponent,
     AdminComponent,
     MainNavComponent,
-    UserListComponent
+    UserListComponent,
+    UserDetailsComponent,
+    UpdateDetailsComponent,
+    UpdateBillComponent,
+    UpdateConnectionComponent,
+    UserComponent,
+    BillSummaryComponent,
+    PayBillComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,

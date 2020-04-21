@@ -1,0 +1,80 @@
+<!-- <div class="pay-container">
+    <div class="sidebar">
+        <app-user></app-user>
+    </div>
+    <div class="payment-form">
+        <div class="card">
+            <div class="card-body">
+                <h3>Payment </h3>
+                <form>
+                    <div class="leftcontent">
+
+                        <div class="form-group">
+                            <label for="name">Bill Id :</label>
+                            <input type="number" class="form-control" id="billId" required [(ngModel)]="pay.billId" name="billId">
+                          </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+<div class="pay-container">
+    <div class="sidebar">
+        <app-user></app-user>
+    </div>
+    <div [hidden]="submitted" style="padding-left: 10em; padding-right: 5em; padding-top: 2em;">
+        <div class="card">
+            <div class="card-body">
+                <h3>Payment </h3>
+      <form >      
+          <div class="leftcontent">
+        <div class="form-group">
+            <label for="billId">Bill Id :</label>
+            <input type="number" class="form-control" id="billId" required [(ngModel)]="pay.billId" name="billId">
+          </div>
+          <div class="form-group">
+            <label for="cname">Name on Card</label>
+            <input type="text" class="form-control" id="cardname" required [(ngModel)]="pay.cardname" name="cardname">
+          </div>
+        <div class="form-group">
+            <label for="ccnum">Credit card number</label>
+          <input type="text" class="form-control" id="cardnumber" required [(ngModel)]="pay.cardnumber" name="cardnumber">
+        </div>
+    
+        <div class="form-group">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" class="form-control" id="expmonth" required [(ngModel)]="pay.expmonth" name="expmonth">
+          </div>
+
+        </div>
+    
+        <div class="rightcontent">
+            <div class="form-group">
+                <label for="expyear">Exp Year</label>
+                <input type="text" class="form-control" id="expyear" required [(ngModel)]="pay.expyear" name="expyear">
+              </div>
+    
+          
+    
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="number" class="form-control" id="cvv" required [(ngModel)]="pay.cvv" name="cvv">
+          </div>
+
+          <div class="form-group">
+            <label for="amount">Amount To Be Paid :- </label>
+            <input type="number" class="form-control" id="amount" required [(ngModel)]="pay.amount" name="amount">
+          </div>
+        </div>
+          
+          <button class="btn btn-success" (click)="onSubmit()">Submit</button>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    

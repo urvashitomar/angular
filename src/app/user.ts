@@ -1,11 +1,12 @@
 export class User {
-    id:number;
+    uId:number;
     firstName:string;
     lastName:string;
     email:string;
     password:string;
     gender:string;
     aadhaar:string;
+    status:string;
     mobNumber:number;
     addressLine1:string;
     addressLine2:string;
