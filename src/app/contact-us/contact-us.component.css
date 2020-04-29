@@ -1,0 +1,33 @@
+.contact-container{
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+
+}
+.contact-box
+{
+    background-color: rgb(49, 40, 97);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    height: 10em;
+    /* display: flex; */
+    color: whitesmoke;
+}
+.left{
+    float: left;
+    font-weight: bolder;
+}
+.right
+{
+    float: right;
+    font-weight: bolder;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+
+}

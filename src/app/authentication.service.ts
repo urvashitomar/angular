@@ -9,17 +9,17 @@ export class AuthenticationService {
   private baseUrl='http://localhost:8090/epowerbilling/api/loginUser';
   constructor(private http: HttpClient) { }
 
-  authentication1(user):Observable<any>{
-    return this.http.get(`${this.baseUrl}`);
-    // if(username =="urvashitomar02@gmail.com" && password=="123")
-    // {
-    //   sessionStorage.setItem("username",username)
-    //   return true;
-    // }
-    // else{
-    //   return false;
-    // }
-  }
+  // authentication1(user):Observable<any>{
+  //   return this.http.get(`${this.baseUrl}`);
+  //   if(username =="urvashitomar02@gmail.com" && password=="123")
+  //   {
+  //     sessionStorage.setItem("username",username)
+  //     return true;
+  //   }
+  //   else{
+  //     return false;
+  //   }
+  // }
   authentication(username,password){
     if(username =="urvashitomar02@gmail.com" && password=="123")
     {

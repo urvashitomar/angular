@@ -4,6 +4,7 @@ export class User {
     lastName:string;
     email:string;
     password:string;
+    newpass:string;
     gender:string;
     aadhaar:string;
     status:string;

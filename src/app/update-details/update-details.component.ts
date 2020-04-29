@@ -40,7 +40,7 @@ export class UpdateDetailsComponent implements OnInit {
   }
   gotoList()
   {
-    this.router.navigate(['/user']);
+    this.router.navigate(['/admin']);
   }
   updateProduct()
   {
