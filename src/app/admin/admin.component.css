@@ -11,7 +11,7 @@
   top:0em;
 
   float: right;
-  width: 50%;
+  width: 90%;
   color: aliceblue;
 
 }
@@ -19,4 +19,10 @@
     float: left;
     width: 15%;
     height: 100%;
+}
+
+.btn {
+  font-size: inherit;
+  float: right;
+  height: fit-content;
 }

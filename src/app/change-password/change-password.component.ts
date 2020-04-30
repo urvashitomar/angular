@@ -25,7 +25,7 @@ export class ChangePasswordComponent implements OnInit {
     this.submitted = true;
     // this.save();
     if(this.user.newpass != this.confirmpass)
-    {
+    { this.router.navigate(['/changepass']);
       this.invalidLogin=true;
       this.passSuccess=false;
       this.successMessage='Password not Changed';
@@ -36,7 +36,7 @@ export class ChangePasswordComponent implements OnInit {
       this.billService.updatePassword(this.user)
       .subscribe(data=>{
         console.log(data)
-        console.log(this.user.email)
+        // console.log(this.user.email)
         if(data == true)
         {
           this.router.navigate(['/login']);
@@ -44,9 +44,9 @@ export class ChangePasswordComponent implements OnInit {
       this.passSuccess=true
       this.successMessage='Password Changed Successful';
         }
-        else
+        else if(data == false)
         {
-          //this.router.navigate(['/login']);
+          this.router.navigate(['changepass']);
           this.invalidLogin=true;
          this.passSuccess=false;
          this.successMessage='Password not Changed';
@@ -55,4 +55,10 @@ export class ChangePasswordComponent implements OnInit {
     }
 
     }
+
+    list(){
+      this.submitted=true;
+    this.router.navigate(['/admin']);
+      
+      }
 }

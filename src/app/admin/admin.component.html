@@ -1,11 +1,13 @@
 <!-- <h1>admin works</h1> -->
 <div class="admin-container">
+  
   <div class="sidebar">
     <!-- <router-outlet name="sidebar"></router-outlet> -->
     <app-main-nav></app-main-nav>
   </div>
 
   <div class="user-list-container">
+    <button (click)="list()" class="btn btn-primary">Logout</button><br>
       <app-user-list></app-user-list>
   </div>
 </div>
